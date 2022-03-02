@@ -123,6 +123,7 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'base.User'
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = 'static/'
 MEDIA_URL = 'images/'
 
