@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&%%vn3z+4eo63ppa35r$s*nd^-(+xxgr*+a7s8mcnl2$k=rz)m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000', 'studybud-django.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'studybud-django.herokuapp.com']
 
 
 # Application definition
@@ -124,8 +124,8 @@ USE_TZ = True
 AUTH_USER_MODEL = 'base.User'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATIC_URL = 'static/'
-MEDIA_URL = 'images/'
+STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
